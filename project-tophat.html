@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperloop Top Hat — Navin D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="description" content="Hyperloop Top Hat — 3.0m composite aerodynamic body achieving Cd ≈ 0.25. End-to-end CFD, manufacturing, and deployment by Navin D.">
+    <meta name="author" content="Navin D">
+    <meta property="og:title" content="Hyperloop Top Hat — Navin D">
+    <meta property="og:description" content="3.0m composite aerodynamic body. CFD-optimized, minister-showcased.">
+    <meta property="og:image" content="assets/images/tophat-hero.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>ND<span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#education" class="nav-link">Education</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="project-hero-bg">
+            <img src="assets/images/tophat-hero.jpg" alt="Hyperloop Top Hat CAD Render">
+        </div>
+        <div class="project-hero-overlay"></div>
+        <div class="project-hero-content">
+            <a href="index.html#projects" class="project-hero-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Back to Projects
+            </a>
+            <h1 class="project-hero-title">Hyperloop Top Hat</h1>
+            <p class="project-hero-subtitle">End-to-end development of Tutr Hyperloop's first composite aerodynamic body — from CFD-optimized design through composite manufacturing to minister-level showcase.</p>
+            <div class="project-stats-bar">
+                <div class="project-stat">
+                    <span class="project-stat-value">&#8377;20L</span>
+                    <span class="project-stat-label">Program Budget</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">~10 mo</span>
+                    <span class="project-stat-label">Concept to Deployment</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">Cd &#8776; 0.25</span>
+                    <span class="project-stat-label">Final Drag Coefficient</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">60 kg</span>
+                    <span class="project-stat-label">Production Weight</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">20+</span>
+                    <span class="project-stat-label">CFD Iterations</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">5+</span>
+                    <span class="project-stat-label">Vendors Coordinated</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">01</span>
+                <h2 class="project-section-title">Overview & Ownership</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid">
+                <div class="narrative-text">
+                    <h3>Assumed ownership of a high-stakes program mid-flight</h3>
+                    <p>I took over this &#8377;20 lakh program as CFD Engineer after a managerial transition, with the aerodynamic body design incomplete and manufacturing timelines at risk. Rather than hand off to another team, I assumed <strong>end-to-end ownership</strong> — from aerodynamic optimization through composite manufacturing, vendor coordination, and final integration.</p>
+                    <p>The objective was to design and build a lightweight, aerodynamically efficient composite body for Tutr Hyperloop's pod — the first of its kind at the organization. The body needed to minimize drag at high speeds, withstand operational loads, and be manufacturable within budget and schedule constraints.</p>
+                    <p>The program culminated in a successful <strong>minister-level technology showcase</strong> to the Hon'ble Indian Railway Minister in March 2025 — validating the complete engineering workflow from simulation to deployment.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/tophat-standalone.jpg" alt="Final assembled Top Hat" loading="lazy">
+                    <div class="narrative-caption">Final assembled Top Hat on the Hyperloop pod, ready for integration testing inside the 8.6 m vacuum test facility.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Narrative -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">02</span>
+                <h2 class="project-section-title">Engineering Narrative</h2>
+                <div class="project-section-line"></div>
+            </div>
+
+            <!-- CFD & Design -->
+            <div class="narrative-grid reverse" style="margin-bottom: 64px;">
+                <div class="narrative-text">
+                    <h3>Aerodynamic optimization via CFD</h3>
+                    <p>I designed the 3.0 m &#215; 1.1 m &#215; 1.1 m composite aerodynamic body in <strong>SOLIDWORKS</strong>, balancing four competing constraints: aerodynamic performance, manufacturability, structural integrity, and weight.</p>
+                    <p>The external aerodynamic profile was optimized through <strong>20+ CFD iterations</strong> in <strong>ANSYS Fluent</strong> using the k-&#969; SST turbulence model. I evaluated the design across <strong>15+ operating conditions</strong> including varying speeds, yaw angles, and ground clearances to ensure robust performance.</p>
+                    <p>Before committing to the full-scale design, I validated the complete simulation workflow against a <strong>Tesla Model S benchmark</strong> — confirming methodology accuracy and building confidence in the predicted drag coefficient of <strong>Cd &#8776; 0.25</strong>.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/tophat-3dprint.jpg" alt="1:30 Scale 3D-Printed Prototype" loading="lazy">
+                    <div class="narrative-caption">1:30 scale 3D-printed prototype used for physical validation of the aerodynamic profile before full-scale composite manufacturing commitment.</div>
+                </div>
+            </div>
+
+            <!-- Manufacturing -->
+            <div class="narrative-grid" style="margin-bottom: 64px;">
+                <div class="narrative-image">
+                    <img src="assets/images/tophat-pattern.jpg" alt="MDF Master Pattern" loading="lazy">
+                    <div class="narrative-caption">MDF master pattern fabricated for mould creation — the foundation of repeatable composite manufacturing for the Top Hat body.</div>
+                </div>
+                <div class="narrative-text">
+                    <h3>From pattern to production composite</h3>
+                    <p>I developed a complete <strong>MDF master pattern and mould fabrication workflow</strong> to enable repeatable composite manufacturing. The pattern was CNC-machined to precise tolerances, then used to create production moulds for glass fiber hand lay-up.</p>
+                    <p>I directed the <strong>glass fiber hand lay-up process</strong> with optimized laminate orientations — combining unidirectional (UD) and bidirectional (BD) fabrics at 0&#176;/45&#176;/90&#176; angles to achieve the required stiffness-to-weight ratio. The production assembly weighed <strong>60 kg</strong>, meeting the aggressive lightweight target.</p>
+                    <p>Quality control included dimensional verification, surface finish inspection, and structural integrity checks at each stage of the lay-up process.</p>
+                </div>
+            </div>
+
+            <!-- Integration -->
+            <div class="narrative-grid reverse">
+                <div class="narrative-text">
+                    <h3>Cross-functional integration & vendor coordination</h3>
+                    <p>I coordinated <strong>5+ external vendors</strong> across machining, mould manufacturing, composite fabrication, painting, transportation, and final integration — each with different lead times, quality standards, and technical requirements.</p>
+                    <p>The integration phase required precise alignment of the composite body with the pod's structural frame, ensuring load paths were maintained and no interference existed with subsystems including the LIM, battery pack, and control electronics.</p>
+                    <p>Final fit-check and assembly were completed inside the 8.6 m vacuum test facility, with the Top Hat mounted and verified for operational clearance.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/tophat-pod3.jpg" alt="Top Hat assembled on pod in front of test tube" loading="lazy">
+                    <div class="narrative-caption">Top Hat fully assembled on the Hyperloop pod, positioned in front of the 8.6 m vacuum test tube for final integration verification.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">03</span>
+                <h2 class="project-section-title">Development Gallery</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="image-gallery">
+                <div class="gallery-item wide" data-caption="CAD render of the Top Hat aerodynamic body designed in SOLIDWORKS, showing the optimized external profile achieving Cd &#8776; 0.25.">
+                    <img src="assets/images/tophat-hero.jpg" alt="CAD Render" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">CAD render in SOLIDWORKS — optimized aerodynamic profile</div>
+                </div>
+                <div class="gallery-item" data-caption="1:30 scale 3D-printed prototype used for physical wind tunnel validation and aerodynamic profile verification before full-scale manufacturing.">
+                    <img src="assets/images/tophat-3dprint2.jpg" alt="3D Printed Prototype" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">1:30 scale 3D-printed prototype</div>
+                </div>
+                <div class="gallery-item" data-caption="MDF master pattern — nose section detail showing the precision-machined aerodynamic profile that served as the mould foundation.">
+                    <img src="assets/images/tophat-pattern-nose.jpg" alt="Pattern Nose Section" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">MDF master pattern — nose section</div>
+                </div>
+                <div class="gallery-item" data-caption="MDF master pattern — body section showing the full-length aerodynamic contour machined to tight tolerances for mould fabrication.">
+                    <img src="assets/images/tophat-pattern-body.jpg" alt="Pattern Body Section" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">MDF master pattern — body section</div>
+                </div>
+                <div class="gallery-item wide" data-caption="Top Hat mounted on the Hyperloop pod during integration — side view showing alignment with the pod's structural frame and subsystem clearances.">
+                    <img src="assets/images/tophat-pod1.jpg" alt="Top Hat on Pod Side View" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Top Hat on pod — side profile view</div>
+                </div>
+                <div class="gallery-item" data-caption="Top Hat mounted on the Hyperloop pod — rear three-quarter view demonstrating the aerodynamic tail section and overall proportions.">
+                    <img src="assets/images/tophat-pod2.jpg" alt="Top Hat on Pod Rear View" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Top Hat on pod — rear three-quarter view</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Results -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">04</span>
+                <h2 class="project-section-title">Key Results</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-card-value">Cd &#8776; 0.25</div>
+                    <div class="stat-card-label">Final Drag Coefficient<br>via ANSYS Fluent k-&#969; SST</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">20+</div>
+                    <div class="stat-card-label">CFD Design Iterations<br>across 15+ conditions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">60 kg</div>
+                    <div class="stat-card-label">Glass Fiber Production<br>Assembly Weight</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">3.0 m</div>
+                    <div class="stat-card-label">Overall Length<br>&#215; 1.1 m &#215; 1.1 m</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">~10 mo</div>
+                    <div class="stat-card-label">Concept to<br>Deployment</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">&#8377;20L</div>
+                    <div class="stat-card-label">Total Program<br>Budget Managed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment & Impact -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">05</span>
+                <h2 class="project-section-title">Deployment & Recognition</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid">
+                <div class="narrative-text">
+                    <h3>Minister-level showcase validates the engineering</h3>
+                    <p>The Top Hat was successfully delivered as <strong>Tutr Hyperloop's first operational aerodynamic body</strong> after approximately 10 months of development. The system remains in active service and was showcased during the visit of the <strong>Hon'ble Indian Railway Minister in March 2025</strong>.</p>
+                    <p>This public demonstration validated the complete engineering workflow — from <strong>CFD-optimized design to composite manufacturing to vehicle integration</strong> — and established a repeatable process for future aerodynamic body development at Tutr Hyperloop.</p>
+                    <ul>
+                        <li>First operational Hyperloop Top Hat developed at Tutr</li>
+                        <li>Showcased to Hon'ble Indian Railway Minister, March 2025</li>
+                        <li>System remains in active service post-deployment</li>
+                        <li>Established repeatable aerodynamic body development process</li>
+                        <li>Validated simulation-to-manufacturing workflow end-to-end</li>
+                    </ul>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/tophat-minister.jpg" alt="Team with Hon'ble Railway Minister" loading="lazy">
+                    <div class="narrative-caption">The Tutr Hyperloop team with the Hon'ble Indian Railway Minister during the technology showcase in March 2025, presenting the operational Top Hat and pod system.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-nav">
+        <div class="container">
+            <div class="project-nav-grid">
+                <a href="index.html#projects" class="project-nav-card">
+                    <div class="project-nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                    </div>
+                    <div>
+                        <div class="project-nav-label">Previous</div>
+                        <div class="project-nav-title">All Projects</div>
+                    </div>
+                </a>
+                <a href="project-vacuum.html" class="project-nav-card next">
+                    <div class="project-nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </div>
+                    <div>
+                        <div class="project-nav-label">Next Project</div>
+                        <div class="project-nav-title">Composite Vacuum Pressure Chamber</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">[ND]</span>
+                    <p>Navin D — Mechanical R&D Lead</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#education">Education</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed & Built with precision. &copy; 2026 Navin D.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

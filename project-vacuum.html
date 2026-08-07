@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composite Vacuum Pressure Chamber — Navin D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="description" content="Composite Vacuum Pressure Chamber — Ø800mm × 2m carbon fiber chamber achieving 1 kPa absolute. Designed and built by Navin D.">
+    <meta name="author" content="Navin D">
+    <meta property="og:title" content="Composite Vacuum Chamber — Navin D">
+    <meta property="og:description" content="Ø800mm carbon fiber vacuum chamber. 1 kPa absolute, FEA-validated.">
+    <meta property="og:image" content="assets/images/vacuum-hero.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>ND<span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#education" class="nav-link">Education</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="project-hero-bg">
+            <img src="assets/images/vacuum-hero.jpg" alt="Composite Vacuum Pressure Chamber on Test Rig">
+        </div>
+        <div class="project-hero-overlay"></div>
+        <div class="project-hero-content">
+            <a href="index.html#projects" class="project-hero-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Back to Projects
+            </a>
+            <h1 class="project-hero-title">Composite Vacuum Pressure Chamber</h1>
+            <p class="project-hero-subtitle">Design, failure analysis, and FEA-driven redesign of Tutr Hyperloop's first lightweight composite vacuum pressure chamber for subsystem validation under low-pressure conditions.</p>
+            <div class="project-stats-bar">
+                <div class="project-stat">
+                    <span class="project-stat-value">&#8377;22L</span>
+                    <span class="project-stat-label">Program Budget</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">~12 mo</span>
+                    <span class="project-stat-label">Concept to Validation</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">1 kPa</span>
+                    <span class="project-stat-label">Absolute Pressure</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">~18 Hr</span>
+                    <span class="project-stat-label">Vacuum Hold Test</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">~70 kg</span>
+                    <span class="project-stat-label">Total Assembly</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">&#216;800&#215;2000</span>
+                    <span class="project-stat-label">mm Dimensions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">01</span>
+                <h2 class="project-section-title">Overview & Ownership</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid">
+                <div class="narrative-text">
+                    <h3>Turning failure into a validated first-of-kind system</h3>
+                    <p>I led the complete engineering development of Tutr Hyperloop's <strong>first lightweight composite vacuum pressure chamber</strong> — a critical subsystem validation asset for testing pod components under realistic low-pressure Hyperloop conditions.</p>
+                    <p>The initial prototype (V1.0) experienced <strong>structural failure during pressurization testing</strong>. Rather than abandoning the approach, I conducted root-cause analysis using ANSYS Mechanical FEA, identified the failure mechanisms, and executed a systematic redesign through approximately <strong>15 FEA-driven iteration cycles</strong>.</p>
+                    <p>The redesigned chamber achieved <strong>1 kPa absolute pressure</strong> with stable vacuum performance over an <strong>18-hour hold test</strong> — validating both structural integrity and sealing reliability under operational conditions.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/vacuum-testing.jpg" alt="Pressure Chamber Before Testing" loading="lazy">
+                    <div class="narrative-caption">The composite vacuum pressure chamber positioned for validation testing inside the 8.6 m vacuum test facility, with support structure and sealing interfaces visible.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Narrative -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">02</span>
+                <h2 class="project-section-title">Engineering Narrative</h2>
+                <div class="project-section-line"></div>
+            </div>
+
+            <!-- Design & Failure Analysis -->
+            <div class="narrative-grid reverse" style="margin-bottom: 64px;">
+                <div class="narrative-text">
+                    <h3>Design requirements & V1.0 failure analysis</h3>
+                    <p>The chamber needed to be <strong>lightweight, structurally reliable, and vacuum-compatible</strong> while accommodating electrical and sensor feedthroughs for battery and instrumentation integration. The target was &#216;800 mm &#215; 2000 mm internal dimensions with 1 kPa absolute operating pressure.</p>
+                    <p>The first prototype (V1.0) failed during pressurization testing. I conducted a thorough <strong>root-cause analysis using ANSYS Mechanical FEA</strong>, identifying two primary failure mechanisms:</p>
+                    <ul>
+                        <li><strong>Insufficient laminate thickness</strong> in the cylindrical wall section, leading to excessive hoop stress under vacuum loading</li>
+                        <li><strong>Stress concentrations at the flange-composite interface</strong>, where the aluminum end flanges transferred concentrated loads into the carbon fiber shell</li>
+                    </ul>
+                    <p>This analysis informed every design decision in the V2.0 redesign.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/vacuum-v1failed.jpg" alt="V1.0 Failed Prototype" loading="lazy">
+                    <div class="narrative-caption">The V1.0 prototype after structural failure during pressurization testing — the starting point for systematic FEA-driven redesign and root-cause analysis.</div>
+                </div>
+            </div>
+
+            <!-- Redesign & Fabrication -->
+            <div class="narrative-grid" style="margin-bottom: 64px;">
+                <div class="narrative-image">
+                    <img src="assets/images/vacuum-layup.jpg" alt="Carbon Fiber Hand Lay-up" loading="lazy">
+                    <div class="narrative-caption">Carbon fiber hand lay-up in progress during V2.0 fabrication, showing the optimized laminate sequence with reinforced flange transition zones.</div>
+                </div>
+                <div class="narrative-text">
+                    <h3>FEA-driven redesign & composite fabrication</h3>
+                    <p>The V2.0 redesign addressed both failure modes through systematic <strong>ANSYS Mechanical FEA iterations</strong> (~15 cycles):</p>
+                    <ul>
+                        <li><strong>Optimized carbon fiber lay-up sequences</strong> with increased wall thickness in high-stress regions and tapered transitions to minimize stress concentrations</li>
+                        <li><strong>Reinforced flange bonding</strong> with graded adhesive layers and mechanical interlocking features to distribute interface loads</li>
+                        <li><strong>Integrated aluminum sealing surfaces</strong> with precision-machined O-ring grooves for reliable vacuum sealing</li>
+                    </ul>
+                    <p>I coordinated composite fabrication vendors and supervised hand lay-up, curing schedules, and post-processing workflows to achieve the dimensional tolerances required for reliable vacuum sealing.</p>
+                </div>
+            </div>
+
+            <!-- Feedthroughs -->
+            <div class="narrative-grid reverse">
+                <div class="narrative-text">
+                    <h3>Integrated electrical & sensor feedthroughs</h3>
+                    <p>A critical challenge was maintaining <strong>vacuum integrity while enabling full subsystem connectivity</strong>. I developed and integrated multi-pin electrical feedthroughs for two distinct purposes:</p>
+                    <ul>
+                        <li><strong>High-current power delivery</strong> for the Linear Induction Motor (LIM) and Electromagnetic (EM) systems — requiring robust conductor sizing and thermal management</li>
+                        <li><strong>Sensor signal transmission</strong> for temperature, pressure, and strain monitoring — requiring shielded, low-noise pathways</li>
+                    </ul>
+                    <p>Each feedthrough was designed with double O-ring seals and tested independently before chamber integration to ensure no single point of failure could compromise the vacuum envelope.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/vacuum-door.jpg" alt="Chamber Door with Feedthroughs" loading="lazy">
+                    <div class="narrative-caption">The chamber door assembly with integrated electrical feedthroughs for LIM/EM power delivery and sensor signal transmission, maintaining vacuum integrity.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">03</span>
+                <h2 class="project-section-title">Development Gallery</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="image-gallery">
+                <div class="gallery-item wide" data-caption="Carbon fiber hand lay-up during V2.0 fabrication, showing the optimized laminate sequence with UD and BD fabric layers at controlled orientations.">
+                    <img src="assets/images/vacuum-layup.jpg" alt="Carbon Fiber Lay-up" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Carbon fiber hand lay-up — V2.0 fabrication</div>
+                </div>
+                <div class="gallery-item" data-caption="Precision-machined aluminum flange with O-ring groove, providing the sealing surface for the carbon fiber composite shell and ensuring vacuum integrity.">
+                    <img src="assets/images/vacuum-flange.jpg" alt="Aluminum Flange with O-ring Groove" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Aluminum flange with precision O-ring groove</div>
+                </div>
+                <div class="gallery-item" data-caption="Chamber door assembly with integrated multi-pin electrical feedthroughs for sensor signal transmission, featuring double O-ring seals for vacuum integrity.">
+                    <img src="assets/images/vacuum-feedthrough.jpg" alt="Sensor Feedthrough" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Sensor feedthrough with double O-ring seals</div>
+                </div>
+                <div class="gallery-item" data-caption="High-current power feedthrough for LIM and EM systems, designed to deliver substantial electrical power through the vacuum envelope without compromising pressure integrity.">
+                    <img src="assets/images/vacuum-feedthrough-power.jpg" alt="Power Feedthrough" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Power feedthrough for LIM/EM systems</div>
+                </div>
+                <div class="gallery-item wide" data-caption="The 8.6 m vacuum test facility with the composite pressure chamber installed, showing the full-scale testing environment used for validation.">
+                    <img src="assets/images/vacuum-tube.jpg" alt="8.6m Vacuum Test Facility" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">8.6 m vacuum test facility with chamber installed</div>
+                </div>
+                <div class="gallery-item" data-caption="Battery subsystem assembled inside the vacuum chamber for integrated testing, demonstrating the chamber's role as a critical subsystem validation asset.">
+                    <img src="assets/images/vacuum-battery.jpg" alt="Battery Inside Chamber" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Battery subsystem testing inside chamber</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Results -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">04</span>
+                <h2 class="project-section-title">Key Results</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-card-value">1 kPa</div>
+                    <div class="stat-card-label">Absolute Operating<br>Pressure Achieved</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">&lt;5 kPa</div>
+                    <div class="stat-card-label">Pressure Rise Over<br>~18 Hour Hold Test</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">~70 kg</div>
+                    <div class="stat-card-label">Total Assembly<br>Incl. Flanges & Feedthroughs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">&#216;800&#215;2000</div>
+                    <div class="stat-card-label">mm Chamber<br>Internal Dimensions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">~15</div>
+                    <div class="stat-card-label">FEA Redesign<br>Iterations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">~12 mo</div>
+                    <div class="stat-card-label">Concept to<br>Validation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing & Validation -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">05</span>
+                <h2 class="project-section-title">Testing & Validation</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid">
+                <div class="narrative-text">
+                    <h3>Extended vacuum validation confirms reliability</h3>
+                    <p>The chamber was validated inside Tutr's dedicated <strong>8.6 m vacuum test facility</strong>. The test protocol involved:</p>
+                    <ul>
+                        <li><strong>Initial pump-down</strong> to target pressure using the facility's vacuum pump system</li>
+                        <li><strong>Sealing verification</strong> at incremental pressure steps to identify any leak paths</li>
+                        <li><strong>Extended 18-hour hold test</strong> at 1 kPa absolute to confirm structural stability and sealing reliability over operational durations</li>
+                    </ul>
+                    <p>Pressure rise remained <strong>below 5 kPa over the full 18-hour period</strong>, confirming both structural integrity under sustained vacuum loading and the effectiveness of the O-ring sealing system and feedthrough design.</p>
+                    <p>The chamber was subsequently integrated into the Hyperloop pod for <strong>subsystem-level testing</strong> under realistic low-pressure conditions.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/vacuum-saddle.jpg" alt="Chamber with Support Saddle" loading="lazy">
+                    <div class="narrative-caption">The composite vacuum chamber with its support saddle during indoor handling and preparation for test facility installation.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment & Impact -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">06</span>
+                <h2 class="project-section-title">Deployment & Organizational Impact</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid reverse">
+                <div class="narrative-text">
+                    <h3>Establishing a validated pressure vessel workflow</h3>
+                    <p>The chamber became <strong>Tutr Hyperloop's first operational composite vacuum pressure chamber</strong>, establishing a validated workflow for lightweight pressure vessel development that the organization can replicate for future programs.</p>
+                    <ul>
+                        <li>First composite vacuum pressure chamber developed at Tutr Hyperloop</li>
+                        <li>Validated at 1 kPa absolute with &lt;5 kPa rise over ~18 hours</li>
+                        <li>Integrated electrical & sensor feedthroughs without compromising vacuum integrity</li>
+                        <li>Redesigned from V1.0 failure using systematic FEA-driven engineering</li>
+                        <li>Enabled subsequent battery and LIM subsystem testing inside the Hyperloop pod</li>
+                    </ul>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/vacuum-tubedoor.jpg" alt="Vacuum Test Facility Door" loading="lazy">
+                    <div class="narrative-caption">The 8.6 m vacuum test facility door — the environment where the chamber achieved its 1 kPa absolute validation, confirming readiness for operational Hyperloop subsystem testing.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-nav">
+        <div class="container">
+            <div class="project-nav-grid">
+                <a href="project-tophat.html" class="project-nav-card">
+                    <div class="project-nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                    </div>
+                    <div>
+                        <div class="project-nav-label">Previous Project</div>
+                        <div class="project-nav-title">Hyperloop Top Hat</div>
+                    </div>
+                </a>
+                <a href="project-digitaltwin.html" class="project-nav-card next">
+                    <div class="project-nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </div>
+                    <div>
+                        <div class="project-nav-label">Next Project</div>
+                        <div class="project-nav-title">Structural Digital Twin</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">[ND]</span>
+                    <p>Navin D — Mechanical R&D Lead</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#education">Education</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed & Built with precision. &copy; 2026 Navin D.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

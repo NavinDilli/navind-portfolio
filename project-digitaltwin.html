@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Digital Twin — Navin D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="description" content="Structural Digital Twin — Real-time structural monitoring with ~100ms update rate. NI DAQ + MATLAB + FEA correlation by Navin D.">
+    <meta name="author" content="Navin D">
+    <meta property="og:title" content="Structural Digital Twin — Navin D">
+    <meta property="og:description" content="Real-time Digital Twin with ~100ms update. NI DAQ + MATLAB + FEA.">
+    <meta property="og:image" content="assets/images/dt-hero.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">[</span>ND<span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#education" class="nav-link">Education</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="project-hero-bg">
+            <img src="assets/images/dt-hero.jpg" alt="Structural Digital Twin Workstation">
+        </div>
+        <div class="project-hero-overlay"></div>
+        <div class="project-hero-content">
+            <a href="index.html#projects" class="project-hero-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Back to Projects
+            </a>
+            <h1 class="project-hero-title">Structural Digital Twin</h1>
+            <p class="project-hero-subtitle">Real-time structural monitoring proof-of-concept — synchronizing a physical cantilever scale with its FEA-based virtual counterpart at ~100 ms update latency.</p>
+            <div class="project-stats-bar">
+                <div class="project-stat">
+                    <span class="project-stat-value">~100 ms</span>
+                    <span class="project-stat-label">Real-Time Update</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">300 mm</span>
+                    <span class="project-stat-label">Steel Cantilever Scale</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">NI USB-6003</span>
+                    <span class="project-stat-label">DAQ Hardware</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">MATLAB</span>
+                    <span class="project-stat-label">App Designer Dashboard</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">FEA</span>
+                    <span class="project-stat-label">ANSYS Correlated</span>
+                </div>
+                <div class="project-stat">
+                    <span class="project-stat-value">PoC</span>
+                    <span class="project-stat-label">First at Tutr</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">01</span>
+                <h2 class="project-section-title">Overview & Ownership</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid">
+                <div class="narrative-text">
+                    <h3>Building Tutr's first Digital Engineering capability from the ground up</h3>
+                    <p>I led a two-member team to develop <strong>Tutr Hyperloop's first Structural Digital Twin</strong> proof-of-concept — establishing the organization's foundational Digital Engineering capability.</p>
+                    <p>The objective was to demonstrate <strong>live structural monitoring</strong> by acquiring strain data from a physical structure, processing it through signal conditioning and DAQ hardware, and updating a 3D FEA-based virtual model in MATLAB App Designer with minimal latency.</p>
+                    <p>This proof-of-concept became the template for Tutr's broader Digital Twin initiative, directly informing the <strong>&#8377;30 Crore Digital Twin proposal</strong> to Indian Railways and the ongoing LIM Digital Twin development.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/dt-workstation.jpg" alt="Complete Digital Twin Workstation" loading="lazy">
+                    <div class="narrative-caption">The complete Digital Twin workstation — physical cantilever scale, power supply, NI USB-6003 DAQ, INA101 instrumentation amplifier, and live MATLAB dashboard monitor.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Narrative -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">02</span>
+                <h2 class="project-section-title">Engineering Narrative</h2>
+                <div class="project-section-line"></div>
+            </div>
+
+            <!-- Instrumentation -->
+            <div class="narrative-grid reverse" style="margin-bottom: 64px;">
+                <div class="narrative-text">
+                    <h3>Precision instrumentation for strain acquisition</h3>
+                    <p>The physical system was a <strong>300 mm steel cantilever scale</strong> instrumented with a <strong>full-bridge strain gauge configuration</strong> — chosen over quarter-bridge and half-bridge setups for superior measurement stability, temperature compensation, and sensitivity.</p>
+                    <p>Strain gauge bonding followed strict surface preparation protocols: degreasing, abrasion, neutralization, and adhesive curing under controlled pressure to ensure reliable long-term adhesion and electrical continuity.</p>
+                    <p>An <strong>INA101 instrumentation amplifier</strong> was used for accurate low-level signal conditioning, providing high common-mode rejection ratio (CMRR) and stable gain before digitization. The conditioned signal was routed through breadboard-based signal conditioning circuitry for filtering and level-shifting prior to DAQ acquisition.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/dt-strain.jpg" alt="Strain Gauge Close-up" loading="lazy">
+                    <div class="narrative-caption">Full-bridge strain gauge configuration bonded to the 300 mm steel cantilever scale, providing temperature-compensated, high-sensitivity strain measurement.</div>
+                </div>
+            </div>
+
+            <!-- DAQ & Signal Chain -->
+            <div class="narrative-grid" style="margin-bottom: 64px;">
+                <div class="narrative-image">
+                    <img src="assets/images/dt-ina101.jpg" alt="INA101 and DAQ Close-up" loading="lazy">
+                    <div class="narrative-caption">Close-up of the INA101HP instrumentation amplifier and NI USB-6003 DAQ setup, showing the signal conditioning chain from strain gauge to digital acquisition.</div>
+                </div>
+                <div class="narrative-text">
+                    <h3>Data acquisition & signal chain architecture</h3>
+                    <p>The complete signal chain was designed for <strong>minimal noise and maximum measurement fidelity</strong>:</p>
+                    <ul>
+                        <li><strong>Strain gauges</strong> (full-bridge, 350 &#937;) detect micro-strain from applied loads</li>
+                        <li><strong>INA101 instrumentation amplifier</strong> provides differential amplification with 60+ dB CMRR</li>
+                        <li><strong>Passive filtering</strong> on the breadboard removes high-frequency noise and 50 Hz mains interference</li>
+                        <li><strong>NI USB-6003 DAQ</strong> digitizes at 16-bit resolution with software-configurable sample rates</li>
+                        <li><strong>MATLAB Data Acquisition Toolbox</strong> streams data in real-time via USB</li>
+                    </ul>
+                    <p>The entire analog front-end was shielded and grounded to minimize electromagnetic interference, critical for resolving the microvolt-level signals from the strain gauges.</p>
+                </div>
+            </div>
+
+            <!-- Software & Visualization -->
+            <div class="narrative-grid reverse">
+                <div class="narrative-text">
+                    <h3>Real-time visualization & FEA correlation</h3>
+                    <p>I developed the <strong>MATLAB App Designer dashboard</strong> to provide a comprehensive real-time view of the structural state:</p>
+                    <ul>
+                        <li><strong>Raw voltage display</strong> — live streaming of the acquired signal for diagnostics</li>
+                        <li><strong>Physical load estimation</strong> — calibrated conversion from voltage to applied mass using beam theory</li>
+                        <li><strong>3D stress field visualization</strong> — color-mapped compression and tension zones rendered on the virtual cantilever geometry</li>
+                        <li><strong>Max yield stress indicator</strong> — real-time comparison against material limits</li>
+                    </ul>
+                    <p>The 3D stress field was computed using a <strong>reduced-order model derived from ANSYS Mechanical FEA</strong> — pre-computing the stress distribution for unit loads, then superposing in real-time based on the measured strain. This approach achieved the <strong>~100 ms update rate</strong> while maintaining FEA-level accuracy.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/dt-matlab.jpg" alt="MATLAB Dashboard" loading="lazy">
+                    <div class="narrative-caption">MATLAB App Designer dashboard showing live 3D stress field visualization, raw voltage readout, estimated physical load, and maximum yield stress indicator.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">03</span>
+                <h2 class="project-section-title">Development Gallery</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="image-gallery">
+                <div class="gallery-item wide" data-caption="Complete Digital Twin workstation showing the physical cantilever scale, power supply, NI USB-6003 DAQ, signal conditioning breadboard, and live MATLAB monitor displaying real-time structural data.">
+                    <img src="assets/images/dt-hero.jpg" alt="Full Workstation" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Complete Digital Twin workstation</div>
+                </div>
+                <div class="gallery-item" data-caption="Close-up of the full-bridge strain gauge installation on the 300 mm steel cantilever scale, showing precise gauge placement and wiring for temperature-compensated measurement.">
+                    <img src="assets/images/dt-strain.jpg" alt="Strain Gauge Installation" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Full-bridge strain gauge installation</div>
+                </div>
+                <div class="gallery-item" data-caption="INA101HP instrumentation amplifier and NI USB-6003 DAQ with breadboard signal conditioning, showing the complete analog front-end from strain gauge to digital acquisition.">
+                    <img src="assets/images/dt-ina101.jpg" alt="INA101 and DAQ" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">INA101 amplifier + NI DAQ setup</div>
+                </div>
+                <div class="gallery-item" data-caption="Instrumented cantilever scale with strain gauges, DAQ hardware, and INA101 amplifier in the complete measurement chain, ready for load application and real-time monitoring.">
+                    <img src="assets/images/dt-scale.jpg" alt="Instrumented Scale" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Complete instrumented scale setup</div>
+                </div>
+                <div class="gallery-item wide" data-caption="Live deflection measurement displayed on the monitor, showing real-time correlation between physical load application and virtual model response in the MATLAB dashboard.">
+                    <img src="assets/images/dt-display.jpg" alt="Live Deflection Display" loading="lazy">
+                    <div class="gallery-overlay"><div class="gallery-zoom"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+                    <div class="gallery-caption">Live deflection data on display</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Results -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">04</span>
+                <h2 class="project-section-title">Key Results</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="stat-card-value">~100 ms</div>
+                    <div class="stat-card-label">Real-Time Update<br>Rate Achieved</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">300 mm</div>
+                    <div class="stat-card-label">Steel Cantilever<br>Scale Length</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">Full-Bridge</div>
+                    <div class="stat-card-label">Strain Gauge<br>Configuration</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">INA101</div>
+                    <div class="stat-card-label">Instrumentation<br>Amplifier</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">NI USB-6003</div>
+                    <div class="stat-card-label">16-bit Data<br>Acquisition</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-value">FEA</div>
+                    <div class="stat-card-label">ANSYS Mechanical<br>Correlated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing & Validation -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">05</span>
+                <h2 class="project-section-title">Testing & Validation</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid">
+                <div class="narrative-text">
+                    <h3>Three-way correlation validates the Digital Twin</h3>
+                    <p>I validated the Digital Twin through <strong>progressive loading</strong> of the instrumented cantilever scale:</p>
+                    <ul>
+                        <li><strong>Known masses</strong> were applied at calibrated positions to generate controlled bending stress</li>
+                        <li><strong>Live dashboard outputs</strong> — raw voltage, estimated physical load, and max yield stress — were recorded in real-time</li>
+                        <li>Results were compared against both <strong>analytical beam theory</strong> (Euler-Bernoulli) and independent <strong>ANSYS Mechanical FEA</strong> predictions</li>
+                    </ul>
+                    <p>The real-time stress field visualization <strong>accurately tracked load changes with sub-second latency</strong>, and estimated peak stress values correlated within acceptable engineering tolerance against both analytical and FEA benchmarks.</p>
+                    <p>This three-way validation — physical measurement, analytical theory, and numerical simulation — provided the confidence needed to propose scaling the approach to industrial systems.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/dt-scale.jpg" alt="Validation Setup" loading="lazy">
+                    <div class="narrative-caption">The instrumented cantilever scale with complete measurement chain during validation testing, with known masses applied for controlled load generation and three-way correlation.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment & Impact -->
+    <section class="project-section alt">
+        <div class="container">
+            <div class="project-section-header">
+                <span class="project-section-number">06</span>
+                <h2 class="project-section-title">Deployment & Organizational Impact</h2>
+                <div class="project-section-line"></div>
+            </div>
+            <div class="narrative-grid reverse">
+                <div class="narrative-text">
+                    <h3>Creating a reusable Digital Engineering architecture</h3>
+                    <p>This proof-of-concept established <strong>Tutr's first Structural Digital Twin capability</strong>, creating a reusable architecture that integrates physical sensing, data acquisition, and virtual simulation into a single real-time engineering workflow.</p>
+                    <ul>
+                        <li>First Digital Twin proof-of-concept developed at Tutr Hyperloop</li>
+                        <li>Demonstrated real-time synchronization between physical structure and FEA-based virtual model</li>
+                        <li>Achieved ~100 ms update rate with stable data acquisition and visualization</li>
+                        <li>Validated against ANSYS Mechanical FEA and physical strain measurements</li>
+                        <li>Created a modular framework reusable for future Digital Engineering projects</li>
+                    </ul>
+                    <p>The framework directly informed the <strong>Battery Digital Twin PoC</strong> (Raspberry Pi + INA226 I&#178;C + Simulink for live SOC/SOH estimation) and the ongoing <strong>LIM Digital Twin</strong> for Hyperloop pod predictive maintenance — demonstrating the scalability of the approach across different physical domains.</p>
+                </div>
+                <div class="narrative-image">
+                    <img src="assets/images/dt-workstation.jpg" alt="Full Workstation Overview" loading="lazy">
+                    <div class="narrative-caption">The complete Digital Twin workstation — a modular, reusable architecture integrating physical sensing, signal conditioning, data acquisition, and real-time FEA-based visualization.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-nav">
+        <div class="container">
+            <div class="project-nav-grid">
+                <a href="project-vacuum.html" class="project-nav-card">
+                    <div class="project-nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                    </div>
+                    <div>
+                        <div class="project-nav-label">Previous Project</div>
+                        <div class="project-nav-title">Composite Vacuum Pressure Chamber</div>
+                    </div>
+                </a>
+                <a href="index.html#projects" class="project-nav-card next">
+                    <div class="project-nav-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </div>
+                    <div>
+                        <div class="project-nav-label">Back to</div>
+                        <div class="project-nav-title">All Projects</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">[ND]</span>
+                    <p>Navin D — Mechanical R&D Lead</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#education">Education</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed & Built with precision. &copy; 2026 Navin D.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
