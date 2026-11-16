@@ -2217,3 +2217,18 @@ body {
         gap: 16px;
     }
 }
+/* ============================================
+   ARCHITECTURE DIAGRAM LIGHTBOX CARDS
+   ============================================ */
+.narrative-image.gallery-item.diagram-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.narrative-image.gallery-item.diagram-card img {
+    height: auto;
+    max-height: 440px;
+    object-fit: contain;
+    background: var(--bg-secondary);
+    padding: 12px;
+}
